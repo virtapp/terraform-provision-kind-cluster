@@ -1,0 +1,7 @@
+#!/bin/bash
+terraform init &&\
+terraform plan -target module.kind &&\
+terraform apply -target module.kind -auto-approve &&\
+terraform plan &&\
+terraform apply -auto-approve 
+

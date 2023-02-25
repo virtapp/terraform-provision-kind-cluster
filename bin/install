@@ -1,0 +1,6 @@
+#!/bin/bash
+application=${1:-application/apps.tfvars}
+
+terraform init -var-file="${application}" &&\
+terraform plan -var-file="${application}" &&\
+terraform apply -var-file="${application}" --auto-approve
