@@ -11,13 +11,13 @@
 
 ## Get ArgoCD admin password
 ```bash
-$ \
-bin/kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 ```
 ## Connect to ArgoCD
 Port forward ArgoCD to http://localhost:8080
 ```bash
 $ \
-bin/kubectl port-forward -n argocd service/argocd-server --address 0.0.0.0 8080:80
+kubectl port-forward -n argocd service/argocd-server --address 0.0.0.0 8080:80
 ```
 
