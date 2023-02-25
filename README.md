@@ -1,6 +1,5 @@
-# Install Kubernetes (kind) and ArgoCD with Terraform
-![argocd](images/argocd.png)
-
+# Install Kind and ArgoCD with Terraform
+![image](https://user-images.githubusercontent.com/23049337/221380821-54af138c-72aa-4124-bb7a-b01a17c47c1f.png)
 # Install prerequisites
  * docker
  * terraform 
